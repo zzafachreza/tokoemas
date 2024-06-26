@@ -43,23 +43,7 @@ export default function Home({ navigation }) {
 
   const createPDF = async () => {
     let options = {
-      html: `<center><h2>NOTA</h2></center>
-      <table width="100%" cellpadding="4">
-        <tr>
-          <td width="15%">Nama</td>
-          <td>:</td>
-        </tr>
-         <tr>
-          <td>Alamat</td>
-          <td>:</td>
-        </tr>
-         <tr>
-          <td>No HP</td>
-          <td>:</td>
-        </tr>
-      </table>
-      
-      <table width="100%" border="2" style="margin-top:5%;border-collapse:collapse" cellpadding="4">
+      html: `<table width="100%" border="2" style="margin-top:0%;border-collapse:collapse" cellpadding="4">
         <tr>
           <td>
             <center><img src="${foto[1]}" width="300" height="300" /></center>
@@ -81,6 +65,7 @@ export default function Home({ navigation }) {
       </table>`,
       fileName: 'TokoEmasPermata',
       directory: 'Documents',
+      height: 559, width: 793,
     };
 
     let file = await RNHTMLtoPDF.convert(options)

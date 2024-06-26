@@ -95,11 +95,11 @@ export default function AAAtur({ navigation }) {
 
             </View>
 
-            <View style={{
+            {/* <View style={{
                 padding: 20,
             }}>
                 <MyButton onPress={btnKeluar} warna="#F5F2E6" title="Keluar" Icons="log-out" iconColor={colors.black} colorText={colors.black} />
-            </View>
+            </View> */}
         </SafeAreaView>
     )
 }
